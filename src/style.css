@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+}
+
+li {
+    opacity: 0.6;
+}
+
+.weather-app-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.weather-app {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.temperature {
+    font-size: 58px;
+    line-height: 1;
+}
+
+.active {
+    color: #000;
+    cursor: default;
+}
+
+.link {
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+}
+
+.add-city {
+    border: 1px solid rgb(187, 185, 185);
+    border-radius: 6px;
+    height: 200px;
+    display: flex;
+}
+
+.btn {
+    margin: 0 auto;
+    align-items: center;
+}
+
+.weather-forecast {
+    text-align: center;
+}
+
+.weather-forecast-date {
+    opacity: 0.6;
+}
+
+.weather-forecast-temperature-min {
+    opacity: 0.6;
+}
+
+.footer {
+    font-size: 14px;
+}

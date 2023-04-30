@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather app</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./src/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app-wrapper">
+            <div class="weather-app">
+                <form id="searchForm">
+                    <div class="row">
+                        <div class="col-12 input-group mt-3 mb-5">
+                            <input type="search" class="form-control search-input" placeholder="Type a city..." id="city-input" autocomplete="off" aria-describedby="button-addon2" />
+                            <input type="submit" value="Search" class="btn btn-secondary search-input" id="button-addon2" />
+                        </div>
+                    </div>
+                </form>
+                <div class="overview col-10">
+                    <h1 class="mb-2" id="current-location"></h1>
+                    <ul class="list-unstyled">
+                        <li id="current-day"></li>
+                        <li id="description"></li>
+                    </ul>
+                </div>
+                <div class="row d-flex align-items-center mb-4">
+                    <div class="col-10">
+                        <div class="weather-today mb-3 position-relative">
+                            <div class="d-flex align-content-start justify-content-between mt-3">
+                                <div class="h1 position-relative">
+                                    <img src=" " alt=" " id="icon" class="float-left" />
+                                    <span class="temperature" id="temperature"></span>
+                                    <span class="units align-text-top fs-5"><a href="#" class="link active" id="celsius-link"
+                        >&#xB0;C
+                      </a>
+                      |
+                      <a href="#" class="link" id="fahrenheit-link">
+                        &#xB0;F</a
+                      ></span
+                    >
+                  </div>
+                  <ul class="list-unstyled">
+                    <li>Humidity: <span id="humidity"></span>%</li>
+                                    <li>Wind: <span id="wind"></span> km/h</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-forecast mb-5" id="forecast"></div>
+                </div>
+                <small>
+                    This project is coded by JINNEE | is
+          <a href="" target="_blank"
+>Open-source code on Github</a>
+<a href="" target="_blank"
+> and hosted by Netlify.</a>
+
+          by JINNEE
+        </small>
+            </div>
+        </div>
+        <script src="src/app.js"></script>
+</body>
+
+</html>
